@@ -1,0 +1,15 @@
+{
+  "name": "Twitterを開くな！！！",
+  "description": "Twitterしてる暇があったら勉強しろ",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[{
+    "matches":["https://twitter.com/*"],
+    "js":[
+        "alert.js"
+    ]
+  }]
+}
